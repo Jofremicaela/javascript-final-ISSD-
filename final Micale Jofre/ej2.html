@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+
+    <script languaje="javascript">
+
+        function totalaPagar(){
+            indice1 = document.vehiculos.tipove.selectedIndex;
+	var tipo = parseInt(document.vehiculos.tipove.options[indice1].value) ;
+    indice2 = document.vehiculos.cantidadias.selectedIndex;
+	var cantidad = parseInt(document.vehiculos.cantidadias.options[indice2].value)
+    var total= tipo*cantidad;
+
+    vehiculos.resultado.value=total;
+
+
+        }
+        
+    
+    </script>
+</head>
+<body>
+    <center>
+    <h1>Alquiler de vehiculos</h1>
+
+    <form name="vehiculos">
+
+
+ <select size="1" name="tipove" id="tipove" style="font-size: 20px;">
+    <option value="#">Seleccione el tipo</option>
+    <option value="600">Sedan </option>
+    <option value="900">Cupé</option>
+    <option value="1200 ">Pickup</option>
+    <option value="1500"> 4x4</option>
+</select><br><br>
+
+
+<select size="1"  name="cantidadias" style="font-size: 20px;">
+    <option value="">Cantidad de dias </option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+    <option value="25">25</option>
+    <option value="30">30</option>
+</select><br><br><br>
+
+<input type="button" value="Importe a pagar" onclick="totalaPagar()"  style="font-size: 30px;"><br>
+<br>
+Total: <input type="text" name="resultado">
+
+    </form>
+</center>
+  <!--   Desarrollar una página de Alquiler de Vehículos, en donde se deben colocar dos objetos
+Select, uno para seleccionar el tipo de Vehículo y otro para seleccionar la cantidad de días
+(colocar valores de 1 a 31 días). Se debe tener en cuenta los siguientes precios por día para
+los tipos de Vehículos: Sedan $600, Cupé $900, Pickup $1200 y 4x4 $1500.
+Al presionar el botón [Importe a pagar], mostrar en un Text el monto que se debe abonar -->
+    
+</body>
+</html>
